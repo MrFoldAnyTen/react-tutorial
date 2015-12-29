@@ -17,6 +17,9 @@
     <script type="text/babel">
       // To get started with this tutorial running your own code, simply remove
       // the script tag loading scripts/example.js and start writing code here.
+
+
+// ///////// /Components////////////////////
       var CommentBox = React.createClass({
         render: function() {
           return (
@@ -26,6 +29,27 @@
           );
         }
       });
+
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              Hello, world! I am a CommentList.
+            </div>
+          );
+        }
+      });
+
+      var CommentForm = React.createClass({
+        render: function() {
+          return (
+            <div className="commentForm">
+              Hello, world! I am a CommentForm.
+            </div>
+          );
+        }
+      });
+// ///////// /Components////////////////////
       ReactDOM.render(
         <CommentBox />,
         document.getElementById('content')
